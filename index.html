@@ -1,53 +1,77 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var whatsappButton = document.querySelector('.btn-whatsapp');
-    if (whatsappButton) {
-        // Posición inicial del botón en el centro de la pantalla
-        var buttonX = window.innerWidth / 2;
-        var buttonY = window.innerHeight / 2;
-        var targetX = buttonX;
-        var targetY = buttonY;
+<!--23-3-2021-tickets-tanguedia2.html-->
 
-        // Velocidad de movimiento del botón
-        var speed = 0.04;
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnderTango Club Ø - Tanguedia Nº2</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="icon" type="image/ico" href="images/undertangofavicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/undertangologo.png" alt="Logo de UnderTango Club Ø" width="83" height="78">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#evento">Evento</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        // Actualizar la posición inicial del botón de WhatsApp
-        whatsappButton.style.position = 'fixed';
-        whatsappButton.style.left = buttonX + 'px';
-        whatsappButton.style.top = buttonY + 'px';
+    <!-- Secciones de UnderTango Club Ø -->
+    <section id="inicio" class="hero">
+        <!-- Contenido de UnderTango Club Ø -->
+    </section>
 
-        // Función para suavizar el movimiento del botón
-        function updateButtonPosition() {
-            requestAnimationFrame(updateButtonPosition);
+    <section id="sobre-nosotros">
+        <!-- Contenido de UnderTango Club Ø -->
+    </section>
 
-            // Calcular la diferencia entre la posición actual y la nueva posición
-            var dx = targetX - buttonX;
-            var dy = targetY - buttonY;
+    <section id="tienda">
+        <!-- Contenido de UnderTango Club Ø -->
+    </section>
 
-            // Mover el botón hacia la nueva posición
-            buttonX += dx * speed;
-            buttonY += dy * speed;
+    <section id="cursos">
+        <!-- Contenido de UnderTango Club Ø -->
+    </section>
 
-            // Actualizar la posición del botón
-            whatsappButton.style.left = buttonX + 'px';
-            whatsappButton.style.top = buttonY + 'px';
-        }
+    <section id="contacto">
+        <!-- Contenido de UnderTango Club Ø -->
+    </section>
 
-        // Escuchar el movimiento del mouse para actualizar la posición destino del botón
+    <!-- Sección de Tanguedia Nº2 -->
+    <section id="evento">
+        <h2>Tanguedia Nº2: Una Noche de Tango Electrónico</h2>
+        <!-- Contenido de Tanguedia Nº2 -->
+    </section>
+
+    <a href="https://wa.me/543757618270" target="_blank"></a>
+        <button class="btn-whatsapp">WhatsApp</button>
+    </a>
+    
+    <script>
         document.addEventListener('mousemove', function(e) {
-            targetX = e.clientX;
-            targetY = e.clientY;
+            var x = e.clientX;
+            var y = e.clientY;
+            var whatsappButton = document.querySelector('.btn-whatsapp');
+            whatsappButton.style.left = x + 'px';
+            whatsappButton.style.top = y + 'px';
         });
+        </script>
+        
 
-        // Iniciar la actualización de posición
-        updateButtonPosition();
+    <footer>
+        <p>&copy; 2024 UnderTango Club Ø. Todos los derechos reservados.</p>
+    </footer>
 
-        // Agregar event listener para el click en el botón de WhatsApp
-        whatsappButton.addEventListener('click', function() {
-            alert('Redirigiendo a la página de compra de entradas...');
-            // Redirigir al usuario a la URL de WhatsApp
-            window.location.href = 'https://wa.me/543757618270';
-        });
-    } else {
-        console.error('El botón de WhatsApp no se encontró.');
-    }
-});
+    <script src="script1.js"></script>
+    
+
+        
+</body>
+</html>
