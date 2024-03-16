@@ -62,3 +62,19 @@ nav a {
 nav a:hover {
     color: #ccc;
 }
+
+.whatsapp-fixed {
+    position: fixed;
+    bottom: 40px;
+    right: 62px;
+    z-index: 9;
+}
+
+.btn-whatsapp {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Resto de estilos */
+}
+
