@@ -1,0 +1,93 @@
+/* Paleta de colores */
+:root{
+    --color-blue-1: rgb(2, 2, 78);
+    --color-blue-2: rgb(47, 64, 147);
+    --color-brown: rgb(79, 32, 9);
+    --color-red: rgb(130, 0, 0);
+    --background-white: #f4f4f4;
+    --background-grey: #333;
+
+}
+
+
+/* styles1.css 0*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-white);
+}
+
+header, .event-details, .lineup, .cta {
+    background-color: var(--background-grey);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos adicionales para mejorar la integración */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+.whatsapp-fixed {
+    position: fixed;
+    bottom: 40px;
+    right: 62px;
+    z-index: 9;
+}
+
+.btn-whatsapp {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Resto de estilos */
+}
+
