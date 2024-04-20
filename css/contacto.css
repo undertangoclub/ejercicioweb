@@ -114,11 +114,10 @@ main {
 
 
 form {
-    background-color: var(--color-blue-2);
     padding: 1rem 2rem ;
     border-radius: 8px;
-    color: white;
-    width: 35vh;
+    width: 100%;
+    max-width: 40rem;
 }
 
 form section {
@@ -130,18 +129,24 @@ form section {
 
 form input {
     padding: 5px 4px;
-    border-radius: 5px;
     border: none;
+    border-bottom: 1px solid var(--background-grey);
 }
 
 textarea {
     resize: none;
-    border-radius: 5px;
     border: none;
+    border-bottom: 1px solid var(--background-grey);
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
 }
 
 form h2 {
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 form button {
@@ -152,4 +157,14 @@ form button {
 
 form button:hover {
     background-color: #0367d3;
+}
+
+.contact-item img {
+width: 22px;
+height: 22px;
+}
+
+.mapa {
+    max-width: 40rem;
+    height: 32rem;
 }
