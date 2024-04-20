@@ -4,7 +4,7 @@
     --color-blue-2: rgb(47, 64, 147);
     --color-brown: rgb(79, 32, 9);
     --color-red: rgb(130, 0, 0);
-    --background-white: #f4f4f4;
+    --background-white: #f0e3e3;
     --background-grey: #333;
 
 }
@@ -22,7 +22,7 @@ body {
 header, .event-details, .lineup, .cta {
     background-color: var(--background-grey);
     color: white;
-    padding: 20px;
+    padding: 7px;
     text-align: center;
 }
 
@@ -44,10 +44,10 @@ button {
 }
 
 footer {
-    background-color: #333;
+    background-color: var(--background-grey);
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 7px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -63,17 +63,25 @@ nav ul {
 }
 
 nav li {
-    padding: 10px;
+    padding: 7px;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: var(--background-white);
     font-size: 1em;
 }
 
 nav a:hover {
-    color: #ccc;
+    color: #928989;
+}
+
+.navbar-footer{
+    margin-top: 12px;
+}
+
+.navbar-footer > a{
+    padding: 10px;
 }
 
 .whatsapp-fixed {
