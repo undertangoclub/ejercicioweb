@@ -58,6 +58,10 @@ footer {
     margin-top: auto;
 }
 
+footer > p {
+    margin-top: 20px;
+}
+
 /* Estilos adicionales para mejorar la integración */
 nav ul {
     list-style-type: none;
