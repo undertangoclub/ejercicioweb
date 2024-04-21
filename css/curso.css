@@ -1,0 +1,25 @@
+:root{
+    --color-blue-1: rgb(2, 2, 78);
+    --color-blue-2: rgb(47, 64, 147);
+    --color-brown: rgb(79, 32, 9);
+    --color-red: rgb(130, 0, 0);
+    --background-white: #f0e3e3;
+    --background-grey: #333;
+}
+
+body {
+    
+}
+
+.main-curso{
+    display: inline-block;
+    text-align: center;
+    background-color: var(--color-brown);
+    width:100%;
+    height: 90%;
+    padding: 10px ;
+}
+
+main > img {
+
+}
