@@ -16,6 +16,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-grey);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -44,8 +47,7 @@ footer {
     color: white;
     text-align: center;
     padding: 7px;
-    position: fixed;
-    bottom: 0;
+   margin-top: auto;
     width: 100%;
 }
 
@@ -98,4 +100,41 @@ nav a:hover {
     transform: translate(-50%, -50%);
     /* Resto de estilos */
 }
+
+
+/* seccion principal -primera seccion imagen y titulo */
+.principal{
+    height: 95vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.img-bg {
+    position: absolute;
+    filter: brightness(.3);
+}
+
+
+.principal h1 {
+    font-size: 5rem;
+    
+}
+
+/* .principal-logo {
+    width: 30vh;
+} */
+
+.txt-logo{
+    z-index: 1;
+    text-align: center;
+}
+
+
+
+
+/* fin seccion principal */
 
