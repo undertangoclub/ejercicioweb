@@ -44,7 +44,7 @@ footer {
     color: white;
     text-align: center;
     padding: 7px;
-    position: fixed;
+    position: block;
     bottom: 0;
     width: 100%;
 }
@@ -84,18 +84,4 @@ nav a:hover {
     padding: 10px;
 }
 
-.whatsapp-fixed {
-    position: fixed;
-    bottom: 40px;
-    right: 62px;
-    z-index: 9;
-}
-
-.btn-whatsapp {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    /* Resto de estilos */
-}
 
