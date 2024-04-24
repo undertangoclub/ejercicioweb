@@ -134,13 +134,13 @@ form section {
 form input {
     padding: 5px 4px;
     border: none;
-    border-bottom: 1px solid var(--background-grey);
+    border-bottom: 2px solid rgb(180, 180, 180);
 }
 
 textarea {
     resize: none;
     border: none;
-    border-bottom: 1px solid var(--background-grey);
+    border-bottom: 2px solid rgb(180, 180, 180);
 }
 
 form input:focus,

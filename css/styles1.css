@@ -3,7 +3,7 @@
 
 
 /* Paleta de colores */
-:root{
+:root {
     --color-blue-1: rgb(2, 2, 78);
     --color-blue-2: rgb(47, 64, 147);
     --color-brown: rgb(79, 32, 9);
@@ -13,18 +13,18 @@
 
 }
 
- /* <uniquifier>: Use a unique and descriptive class name
+/* <uniquifier>: Use a unique and descriptive class name
  <weight>: Use a value from 200 to 900 */
 
 .inconsolata {
-  font-family: "Inconsolata", monospace;
-  font-optical-sizing: auto;
-  font-weight:100;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
-  
+
 /* styles1.css 0*/
 
 body {
@@ -51,11 +51,11 @@ footer {
     color: white;
     text-align: center;
     padding: 7px;
-   margin-top: auto;
+    margin-top: auto;
     width: 100%;
 }
 
-footer > p {
+footer>p {
     margin-top: 20px;
 }
 
@@ -82,11 +82,11 @@ nav a:hover {
     color: #928989;
 }
 
-.navbar-footer{
+.navbar-footer {
     margin-top: 12px;
 }
 
-.navbar-footer > a{
+.navbar-footer>a {
     padding: 10px;
 }
 
@@ -107,7 +107,7 @@ nav a:hover {
 
 
 /* seccion principal -primera seccion imagen y titulo */
-.principal{
+.principal {
     height: 95vh;
     overflow: hidden;
     position: relative;
@@ -126,49 +126,47 @@ nav a:hover {
 }
 
 
-.principal h1 {
-    font-size: 5rem;
-    
-}
 
 /* .principal-logo {
     width: 30vh;
 } */
 
-.txt-logo{
+.txt-logo {
     z-index: 1;
     animation: mover 1s ease-in-out;
     position: relative;
-    margin-left: 6rem;
+    /* margin-left: 3rem; */
 }
 
 @keyframes mover {
-    0%{
+    0% {
         left: -200px;
         opacity: 0;
     }
+
     100% {
         left: 0;
         opacity: 1;
     }
 }
+
 /* fin seccion principal */
 
 /* seccion about */
-.about{
-    height: 100vh;
+.about {
+    min-height: 100vh;
     background-color: var(--background-grey);
     color: white;
     padding: 4rem 2rem;
 }
 
 .about h3 {
-color: rgb(253, 143, 143);
+    color: rgb(253, 143, 143);
 }
 
-.about p{
+.about p {
     text-align: justify;
-} 
+}
 
 
 
@@ -177,15 +175,16 @@ color: rgb(253, 143, 143);
 /* solo se debe escribir la clase .aparecer en el elemento que se quiera que tenga la animacion */
 
 .aparecer {
-    animation: aparecer 1s ease-in-out; ;
+    animation: aparecer 1s ease-in-out;
+    ;
 }
 
 @keyframes aparecer {
-    0%{
+    0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
-
