@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jersey+10&display=swap');
+
+
+
 /* Paleta de colores */
 :root{
     --color-blue-1: rgb(2, 2, 78);
@@ -9,10 +13,23 @@
 
 }
 
+ /* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 200 to 900 */
+
+.inconsolata {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+  
 /* styles1.css 0*/
 
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    /* font-family: "Jersey 10", sans-serif; */
     margin: 0;
     padding: 0;
     background-color: var(--background-grey);
@@ -96,13 +113,16 @@ nav a:hover {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     color: white;
 }
 
 .img-bg {
     position: absolute;
     filter: brightness(.3);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 
@@ -117,11 +137,55 @@ nav a:hover {
 
 .txt-logo{
     z-index: 1;
-    text-align: center;
+    animation: mover 1s ease-in-out;
+    position: relative;
+    margin-left: 6rem;
 }
 
-
-
-
+@keyframes mover {
+    0%{
+        left: -200px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
 /* fin seccion principal */
+
+/* seccion about */
+.about{
+    height: 100vh;
+    background-color: var(--background-grey);
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.about h3 {
+color: rgb(253, 143, 143);
+}
+
+.about p{
+    text-align: justify;
+} 
+
+
+
+
+/* animacion aparecer */
+/* solo se debe escribir la clase .aparecer en el elemento que se quiera que tenga la animacion */
+
+.aparecer {
+    animation: aparecer 2s ease-in-out; ;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
