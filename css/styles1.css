@@ -177,7 +177,7 @@ color: rgb(253, 143, 143);
 /* solo se debe escribir la clase .aparecer en el elemento que se quiera que tenga la animacion */
 
 .aparecer {
-    animation: aparecer 2s ease-in-out; ;
+    animation: aparecer 1s ease-in-out; ;
 }
 
 @keyframes aparecer {
