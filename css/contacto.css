@@ -33,9 +33,6 @@ header,
     text-align: center;
 }
 
-section {
-    margin: 20px;
-}
 
 button {
     background-color: #007BFF;
@@ -50,17 +47,6 @@ button {
     cursor: pointer;
 }
 
-footer {
-    background-color: var(--background-grey);
-    color: white;
-    text-align: center;
-    padding: 7px;
-    margin-top: auto;
-}
-
-footer > p {
-    margin-top: 20px;
-}
 
 /* Estilos adicionales para mejorar la integración */
 nav ul {
@@ -86,13 +72,7 @@ nav a:hover {
 }
 
 
-.navbar-footer {
-    margin-top: 12px;
-}
 
-.navbar-footer>a {
-    padding: 10px;
-}
 
 .whatsapp-fixed {
     position: fixed;
@@ -163,10 +143,7 @@ form button:hover {
     background-color: #0367d3;
 }
 
-.contact-item img {
-width: 22px;
-height: 22px;
-}
+
 
 .mapa {
     max-width: 40rem;

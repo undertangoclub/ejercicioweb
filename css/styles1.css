@@ -45,14 +45,20 @@ header {
     text-align: center;
 }
 
+main {
+    padding: 4rem 1rem;
+}
 
 footer {
     background-color: var(--background-grey);
     color: white;
     text-align: center;
-    padding: 7px;
+    /* padding: 4rem 2rem; */
     margin-top: auto;
     width: 100%;
+    font-size: small;
+    border-top: 1px whitesmoke solid;
+
 }
 
 footer>p {
@@ -88,7 +94,38 @@ nav a:hover {
 
 .navbar-footer>a {
     padding: 10px;
+    text-decoration: none;
 }
+
+footer {
+    background-color: var(--background-grey);
+    color: white;
+    text-align: center;
+    padding: 7px;
+    margin-top: auto;
+}
+
+footer > p {
+    margin-top: 20px;
+}
+
+.navbar-footer {
+    margin-top: 12px;
+}
+
+.navbar-footer>a {
+    padding: 10px;
+}
+
+footer a:hover {
+    color: #928989;
+}
+
+
+.contact-item img {
+    width: 22px;
+    height: 22px;
+    }
 
 .whatsapp-fixed {
     position: fixed;
@@ -157,7 +194,7 @@ nav a:hover {
     min-height: 100vh;
     background-color: var(--background-grey);
     color: white;
-    padding: 4rem 2rem;
+    /* padding: 4rem 2rem; */
 }
 
 .about h3 {
