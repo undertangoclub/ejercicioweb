@@ -1,4 +1,4 @@
-<!--23-3-2021-tickets-tanguedia2.html Ø-->
+<!-- Ø 3/5/2024 -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -19,6 +19,7 @@
                 <li><a href="#cursos">Cursos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
                 <li><a href="#evento">Evento</a></li>
+                <li><a href="#0">Ø</a></li>
             </ul>
         </nav>
     </header>
