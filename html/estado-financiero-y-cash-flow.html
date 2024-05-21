@@ -37,6 +37,7 @@
 </head>
 <body>
     <h1>Análisis Financiero - UnderTango Club</h1>
+    <p style="text-align: center;">Todos los valores están en dólares (USD).</p>
 
     <h2>Estado de Resultados</h2>
     <table>
@@ -53,27 +54,99 @@
         <tbody>
             <tr>
                 <td>Ingresos</td>
-                <td>1,200,000</td>
-                <td>1,500,000</td>
-                <td>1,650,000</td>
-                <td>1,815,000</td>
-                <td>1,996,500</td>
+                <td>4,620</td>
+                <td>8,985</td>
+                <td>25,158</td>
+                <td>60,000</td>
+                <td>120,000</td>
             </tr>
             <tr>
-                <td>Gastos</td>
-                <td>500,000</td>
-                <td>640,000</td>
-                <td>704,000</td>
-                <td>774,400</td>
-                <td>851,840</td>
+                <td>COGS</td>
+                <td>3,696</td>
+                <td>7,188</td>
+                <td>17,610.60</td>
+                <td>39,000</td>
+                <td>78,000</td>
+            </tr>
+            <tr>
+                <td>Utilidad Bruta</td>
+                <td>924</td>
+                <td>1,797</td>
+                <td>7,547.40</td>
+                <td>21,000</td>
+                <td>42,000</td>
+            </tr>
+            <tr>
+                <td>Gastos Operativos</td>
+                <td>600</td>
+                <td>859.40</td>
+                <td>1,606.32</td>
+                <td>3,800</td>
+                <td>7,000</td>
+            </tr>
+            <tr>
+                <td>Utilidad Operacional</td>
+                <td>324</td>
+                <td>937.60</td>
+                <td>5,941.08</td>
+                <td>17,200</td>
+                <td>35,000</td>
+            </tr>
+            <tr>
+                <td>Productos Financieros</td>
+                <td>50</td>
+                <td>898.50</td>
+                <td>2,515.80</td>
+                <td>6,000</td>
+                <td>12,000</td>
+            </tr>
+            <tr>
+                <td>Gastos Financieros</td>
+                <td>100</td>
+                <td>179.70</td>
+                <td>503.16</td>
+                <td>1,200</td>
+                <td>2,400</td>
+            </tr>
+            <tr>
+                <td>Otros Ingresos</td>
+                <td>25</td>
+                <td>898.50</td>
+                <td>2,515.80</td>
+                <td>6,000</td>
+                <td>12,000</td>
+            </tr>
+            <tr>
+                <td>Otros Gastos</td>
+                <td>50</td>
+                <td>359.40</td>
+                <td>1,006.32</td>
+                <td>2,400</td>
+                <td>4,800</td>
+            </tr>
+            <tr>
+                <td>Utilidad Antes de Impuestos</td>
+                <td>249</td>
+                <td>3,195.50</td>
+                <td>9,462.20</td>
+                <td>25,600</td>
+                <td>51,800</td>
+            </tr>
+            <tr>
+                <td>Impuestos (30%)</td>
+                <td>74.70</td>
+                <td>958.65</td>
+                <td>2,838.66</td>
+                <td>7,680</td>
+                <td>15,540</td>
             </tr>
             <tr>
                 <td>Utilidad Neta</td>
-                <td>700,000</td>
-                <td>860,000</td>
-                <td>946,000</td>
-                <td>1,040,600</td>
-                <td>1,144,660</td>
+                <td>174.30</td>
+                <td>2,236.85</td>
+                <td>6,623.54</td>
+                <td>17,920</td>
+                <td>36,260</td>
             </tr>
         </tbody>
     </table>
@@ -92,133 +165,167 @@
         <tbody>
             <tr>
                 <td>Actividades Operativas</td>
-                <td>405,000</td>
-                <td>445,500</td>
-                <td>490,050</td>
-                <td>539,055</td>
+                <td>937.60</td>
+                <td>5,941.08</td>
+                <td>17,200</td>
+                <td>35,000</td>
             </tr>
             <tr>
                 <td>Actividades de Inversión</td>
-                <td>-90,000</td>
-                <td>-99,000</td>
-                <td>-108,900</td>
-                <td>-119,790</td>
+                <td>-500</td>
+                <td>-1,000</td>
+                <td>-2,000</td>
+                <td>-4,000</td>
             </tr>
             <tr>
                 <td>Actividades de Financiación</td>
-                <td>180,000</td>
-                <td>198,000</td>
-                <td>217,800</td>
-                <td>239,580</td>
+                <td>101.50</td>
+                <td>-515.80</td>
+                <td>-2,000</td>
+                <td>-4,000</td>
             </tr>
             <tr>
                 <td>Flujo de Caja Neto</td>
-                <td>495,000</td>
-                <td>544,500</td>
-                <td>598,950</td>
-                <td>658,845</td>
+                <td>539.10</td>
+                <td>4,425.28</td>
+                <td>13,200</td>
+                <td>27,000</td>
             </tr>
         </tbody>
     </table>
 
     <h2>Gráficos</h2>
     <div>
-        <h4>Estado de Resultados (ARS)</h4>
+        <h4>Estado de Resultados (USD)</h4>
         <canvas id="incomeStatementChart" width="600" height="400"></canvas>
     </div>
     <div>
-        <h4>Flujo de Caja Proyectado (ARS)</h4>
+        <h4>Flujo de Caja Proyectado (USD)</h4>
         <canvas id="cashFlowChart" width="600" height="400"></canvas>
     </div>
 
     <script>
-        // Data for income statement chart
-        var incomeStatementData = {
-            labels: ['Año Pasado', 'Año Actual', 'Proyección Año 1', 'Proyección Año 2', 'Proyección Año 3'],
-            datasets: [
-                {
-                    label: 'Ingresos',
-                    data: [1200000, 1500000, 1650000, 1815000, 1996500],
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 1
+        // Calculations for COGS and Gross Profit
+        function calculateCOGS(income, percentages) {
+            return income * (percentages.artist + percentages.production);
+        }
+
+        function calculateGrossProfit(income, cogs) {
+            return income - cogs;
+        }
+
+        var incomes = [4620, 8985, 25158, 60000, 120000];
+        var cogsPercentages = [
+            {artist: 0.60, production: 0.20},
+            {artist: 0.60, production: 0.20},
+            {artist: 0.50, production: 0.20},
+            {artist: 0.40, production: 0.25},
+            {artist: 0.40, production: 0.25}
+        ];
+
+        var cogs = incomes.map((income, index) => calculateCOGS(income, cogsPercentages[index]));
+        var grossProfits = incomes.map((income, index) => calculateGrossProfit(income, cogs[index]));
+
+        window.onload = function() {
+            // Create income statement chart
+            var ctx1 = document.getElementById('incomeStatementChart').getContext('2d');
+            new Chart(ctx1, {
+                type: 'bar',
+                data: {
+                    labels: ['Año Pasado', 'Año Actual', 'Proyección Año 1', 'Proyección Año 2', 'Proyección Año 3'],
+                    datasets: [
+                        {
+                            label: 'Ingresos',
+                            data: [4620, 8985, 25158, 60000, 120000],
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'COGS',
+                            data: [3696, 7188, 17610.60, 39000, 78000],
+                            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                            borderColor: 'rgba(255, 99, 132, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Utilidad Bruta',
+                            data: grossProfits,
+                            backgroundColor: 'rgba(255, 205, 86, 0.2)',
+                            borderColor: 'rgba(255, 205, 86, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Gastos Operativos',
+                            data: [600, 859.40, 1606.32, 3800, 7000],
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Utilidad Neta',
+                            data: [174.30, 2236.85, 6623.54, 17920, 36260],
+                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderWidth: 1
+                        }
+                    ]
                 },
-                {
-                    label: 'Gastos',
-                    data: [500000, 640000, 704000, 774400, 851840],
-                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                    borderColor: 'rgba(255, 99, 132, 1)',
-                    borderWidth: 1
-                },
-                {
-                    label: 'Utilidad Neta',
-                    data: [700000, 860000, 946000, 1040600, 1144660],
-                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                    borderColor: 'rgba(54, 162, 235, 1)',
-                    borderWidth: 1
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
                 }
-            ]
-        };
+            });
 
-        // Data for cash flow chart
-        var cashFlowData = {
-            labels: ['Año Actual', 'Proyección Año 1', 'Proyección Año 2', 'Proyección Año 3'],
-            datasets: [
-                {
-                    label: 'Actividades Operativas',
-                    data: [405000, 445500, 490050, 539055],
-                    backgroundColor: 'rgba(153, 102, 255, 0.2)',
-                    borderColor: 'rgba(153, 102, 255, 1)',
-                    borderWidth: 1
+            // Create cash flow chart
+            var ctx2 = document.getElementById('cashFlowChart').getContext('2d');
+            new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: ['Año Actual', 'Proyección Año 1', 'Proyección Año 2', 'Proyección Año 3'],
+                    datasets: [
+                        {
+                            label: 'Actividades Operativas',
+                            data: [937.60, 5941.08, 17200, 35000],
+                            backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                            borderColor: 'rgba(153, 102, 255, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Actividades de Inversión',
+                            data: [-500, -1000, -2000, -4000],
+                            backgroundColor: 'rgba(255, 159, 64, 0.2)',
+                            borderColor: 'rgba(255, 159, 64, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Actividades de Financiación',
+                            data: [101.50, -515.80, -2000, -4000],
+                            backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                            borderColor: 'rgba(255, 206, 86, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Flujo de Caja Neto',
+                            data: [539.10, 4425.28, 13200, 27000],
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }
+                    ]
                 },
-                {
-                    label: 'Actividades de Inversión',
-                    data: [-90000, -99000, -108900, -119790],
-                    backgroundColor: 'rgba(255, 159, 64, 0.2)',
-                    borderColor: 'rgba(255, 159, 64, 1)',
-                    borderWidth: 1
-                },
-                {
-                    label: 'Actividades de Financiación',
-                    data: [180000, 198000, 217800, 239580],
-                    backgroundColor: 'rgba(255, 206, 86, 0.2)',
-                    borderColor: 'rgba(255, 206, 86, 1)',
-                    borderWidth: 1
-                },
-                {
-                    label: 'Flujo de Caja Neto',
-                    data: [495000, 544500, 598950, 658845],
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 1
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
                 }
-            ]
-        };
-
-        // Options for the charts
-        var options = {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        };
-
-        // Create income statement chart
-        var ctx1 = document.getElementById('incomeStatementChart').getContext('2d');
-        new Chart(ctx1, {
-            type: 'bar',
-            data: incomeStatementData,
-            options: options
-        });
-
-        // Create cash flow chart
-        var ctx2 = document.getElementById('cashFlowChart').getContext('2d');
-        new Chart(ctx2, {
-            type: 'bar',
-            data: cashFlowData,
-            options: options
-        });
+            });
+        }
     </script>
 </body>
 </html>
