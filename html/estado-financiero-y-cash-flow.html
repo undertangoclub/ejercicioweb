@@ -131,9 +131,83 @@
         // Data for income statement chart
         var incomeStatementData = {
             labels: ['Marzo', 'Abril', 'Mayo'],
-            datasets: [{
-                label: 'Ingresos',
-                data: [500000, 470000, 530000],
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 
+            datasets: [
+                {
+                    label: 'Ingresos',
+                    data: [500000, 470000, 530000],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Gastos',
+                    data: [215000, 205000, 220000],
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Utilidad Neta',
+                    data: [285000, 265000, 310000],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }
+            ]
+        };
+
+        // Data for cash flow chart
+        var cashFlowData = {
+            labels: ['Marzo', 'Abril', 'Mayo'],
+            datasets: [
+                {
+                    label: 'Actividades Operativas',
+                    data: [125000, 135000, 145000],
+                    backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                    borderColor: 'rgba(153, 102, 255, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Actividades de Inversión',
+                    data: [-20000, -30000, -40000],
+                    backgroundColor: 'rgba(255, 159, 64, 0.2)',
+                    borderColor: 'rgba(255, 159, 64, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Actividades de Financiación',
+                    data: [50000, 60000, 70000],
+                    backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                    borderColor: 'rgba(255, 206, 86, 1)',
+                    borderWidth: 1
+                }
+            ]
+        };
+
+        // Options for the charts
+        var options = {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        };
+
+        // Create income statement chart
+        var ctx1 = document.getElementById('incomeStatementChart').getContext('2d');
+        new Chart(ctx1, {
+            type: 'bar',
+            data: incomeStatementData,
+            options: options
+        });
+
+        // Create cash flow chart
+        var ctx2 = document.getElementById('cashFlowChart').getContext('2d');
+        new Chart(ctx2, {
+            type: 'bar',
+            data: cashFlowData,
+            options: options
+        });
+    </script>
+</body>
+</html>
