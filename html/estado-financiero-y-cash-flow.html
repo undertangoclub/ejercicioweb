@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Análisis Financiero - UnderTango Club</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        canvas {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Análisis Financiero - UnderTango Club</h1>
+
+    <h2>Estado de Resultados</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Concepto</th>
+                <th>Marzo</th>
+                <th>Abril</th>
+                <th>Mayo</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ingresos</td>
+                <td>500,000</td>
+                <td>470,000</td>
+                <td>530,000</td>
+                <td>1,500,000</td>
+            </tr>
+            <tr>
+                <td>Gastos</td>
+                <td>215,000</td>
+                <td>205,000</td>
+                <td>220,000</td>
+                <td>640,000</td>
+            </tr>
+            <tr>
+                <td>Utilidad Neta</td>
+                <td>285,000</td>
+                <td>265,000</td>
+                <td>310,000</td>
+                <td>860,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Flujo de Caja</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Concepto</th>
+                <th>Marzo</th>
+                <th>Abril</th>
+                <th>Mayo</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Actividades Operativas</td>
+                <td>125,000</td>
+                <td>135,000</td>
+                <td>145,000</td>
+                <td>405,000</td>
+            </tr>
+            <tr>
+                <td>Actividades de Inversión</td>
+                <td>-20,000</td>
+                <td>-30,000</td>
+                <td>-40,000</td>
+                <td>-90,000</td>
+            </tr>
+            <tr>
+                <td>Actividades de Financiación</td>
+                <td>50,000</td>
+                <td>60,000</td>
+                <td>70,000</td>
+                <td>180,000</td>
+            </tr>
+            <tr>
+                <td>Flujo de Caja Neto</td>
+                <td>155,000</td>
+                <td>125,000</td>
+                <td>175,000</td>
+                <td>455,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Gráficos</h2>
+    <div>
+        <h4>Estado de Resultados - Ingresos, Gastos y Utilidad Neta</h4>
+        <canvas id="incomeStatementChart" width="600" height="400"></canvas>
+    </div>
+    <div>
+        <h4>Flujo de Caja - Actividades Operativas, de Inversión y Financiación</h4>
+        <canvas id="cashFlowChart" width="600" height="400"></canvas>
+    </div>
+
+    <script>
+        // Data for income statement chart
+        var incomeStatementData = {
+            labels: ['Marzo', 'Abril', 'Mayo'],
+            datasets: [{
+                label: 'Ingresos',
+                data: [500000, 470000, 530000],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 
