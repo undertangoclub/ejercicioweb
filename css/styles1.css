@@ -48,7 +48,7 @@ header {
 main {
     padding: 4rem 1rem;
     flex-grow: 1;
-    background-color: rgb(36,28,150);
+    backgound-color: var(--background-grey);
     {
     
 
