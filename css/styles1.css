@@ -50,11 +50,6 @@ main {
     flex-grow: 1;
 }
 
-#myForm {
- 
-}
-    
-
 footer {
     background-color: var(--background-grey);
     color: white;
