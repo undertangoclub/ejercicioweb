@@ -1,9 +1,18 @@
+*{
+  margin: 0px;
+}
+
+.div-img{
+  border-radius: 12%;
+}
+
 .imagebox {
     background: black;
     padding: 0px;
     position: relative;
     text-align: center;
     width: 100%;
+    border-radius: 12%;
   }
   
   .imagebox img {
@@ -30,5 +39,65 @@
 
   .texto{
     color: aliceblue;
-    background-color: black;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .artistas{
+    background-color: rgba(0, 0, 0, 0.156);
+    padding: 0px 10px 6px 10px;
+    margin-bottom: 7px;
+  }
+
+  .titulo_artistas{
+    margin-top: 85px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #e62929d9;
+  }
+
+  .txt-artistas{
+    
+    padding: 15px 20px 15px 20px;
+  }
+
+  /* ------------------BAILARINES------------------------ */
+
+.bailarines{
+  width: 96%;
+  border-radius: 10px 100px / 120px;
+  border-style: groove;
+  border-color: rgba(0, 0, 0, 0.6);
+  margin: 5px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-around;
+  background: radial-gradient(rgb(52, 50, 50), rgb(42, 39, 39))
+  }
+  
+  .bailarin{
+      border-radius: 17%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 250px;
+      background: linear-gradient(to bottom right, rgb(2, 2, 29), rgb(140, 8, 32))
+  }
+  
+  .nombre-bailarin{
+      color: rgb(183, 209, 200);
+      font-size: 17px;
+  }
+  
+  .tit-bailarin{
+      color: rgb(38, 112, 88);
+      -webkit-text-stroke: 0.5px black;
+      margin-top: 12px;
+      margin-bottom: 10px;
+  }
+  
+  .img-bailarin{
+      width: 140px;
+      justify-content: center;
   }
