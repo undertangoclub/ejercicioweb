@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletín No. 10 - UnderTango Fondo de Inversión 22/7/2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1080px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: #77aaff 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .main {
+            padding: 10px;
+            background: #fff;
+            margin: 10px 0;
+        }
+        .info-box {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            margin-bottom: 10px;
+            background: #e2e2e2;
+            border-radius: 5px;
+        }
+        .info-box div {
+            text-align: center;
+            flex: 1;
+            margin: 5px;
+        }
+        .info-box div h2 {
+            margin: 5px 0;
+            font-size: 1em;
+        }
+        .large-text {
+            font-size: 2em;
+        }
+        .chart {
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #333;
+            color: #fff;
+        }
+        .percentages, .holders {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background: #e2e2e2;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .percentages div, .holders div {
+            text-align: center;
+            flex: 1;
+            margin: 5px;
+            font-size: 1.2em;
+        }
+        .bold-text {
+            font-weight: bold;
+        }
+        @media (max-width: 1080px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .large-text {
+                font-size: 1.2em;
+            }
+            .info-box div, .percentages div, .holders div {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+</head>
+<body>
+    <header>
+        <h1>Boletín No. 10 - UnderTango Fondo de Inversión 22/7/2024</h1>
+    </header>
+    <div class="container">
+        <div class="main">
+            <div class="info-box">
+                <div>
+                    <h2>CAJA NETA</h2>
+                    <p class="large-text">AR$ 425,482</p>
+                </div>
+                <div>
+                    <h2>VALOR DE LA ACCIÓN p/u (Valor en Caja dividido la Cantidad de acciones)</h2>
+                    <p class="large-text">AR$ 1,215</p>
+                </div>
+                <div>
+                    <h2>VARIACIÓN SEMANAL</h2>
+                    <p class="large-text">+15.44%</p>
+                </div>
+            </div>
+            <div class="chart">
+                <canvas id="myChart" height="50"></canvas>
+            </div>
+            <div class="percentages">
+                <div>
+                    <h3>PORCENTAJES:</h3>
+                    <p class="bold-text">50% Caché del Artista</p>
+                    <p class="bold-text">25% Gastos de Producción</p>
+                    <p class="bold-text">15% Para la caja</p>
+                    <p class="bold-text">10% Retribución a inversores</p>
+                </div>
+                <div>
+                    <h3>TENEDORES:</h3>
+                    <p class="bold-text">PABLO CIESLIK : 242 ACCIONES | =</p>
+                    <p class="bold-text">BIANCA WAGNER : 100 ACCIONES | +14</p>
+                    <p class="bold-text">LUCIANO VALDEMARIN : 8 ACCIONES | +3</p>
+                    <p class="bold-text">Total de acciones: 350</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <div>
+                    <h2>RETRIBUCIÓN SEMANAL (10% de la caja divido por la cantidad de acciones)</h2>
+                    <p class="large-text">AR$ 121,56 POR ACCIÓN</p>
+                    <h5>(DESDE LA SEMANA QUE VIENE (el 10% será de los <u>ingresos semanales</u> dividido la cantidad de acciones))</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [
+                    '1er semana de mayo', 
+                    '2da semana de mayo', 
+                    '3ra semana de mayo', 
+                    '4ta semana de mayo', 
+                    '5ta semana de mayo', 
+                    '1ra semana de junio',
+                    '2da semana de junio',
+                    '3ra semana de junio',
+                    'última semana de junio',
+                    '1er semana de julio',
+                    '2da semana de julio',
+                    '3er semana de julio'
+                ],
+                datasets: [{
+                    label: 'Montos semanales de la caja en el trimestre mayo-junio',
+                    data: [
+                        70000, 
+                        72000, 
+                        112000, 
+                        134000, 
+                        169322,
+                        220322,
+                        293322,
+                        324322,
+                        273790,
+                        277990,
+                        359782,
+                        425482
+                    ],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                plugins: {
+                    datalabels: {
+                        anchor: 'end',
+                        align: 'top',
+                        formatter: (value) => value.toLocaleString(),
+                        color: 'black',
+                        font: {
+                            weight: 'bold'
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            },
+            plugins: [ChartDataLabels]
+        });
+    </script>
+</body>
+</html>
