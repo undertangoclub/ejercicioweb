@@ -1,8 +1,84 @@
 <!DOCTYPE html>
-<html>
-     <head></head>
-     <body>
-      <input id="myId" type="text"></input>
-      <button onClick="console.log(document.getElementById('myId').value)">Get Text</button>
-     </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribución de Ingresos de UnderTango</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #333;
+        }
+        #chart-container {
+            width: 100%;
+            height: 500px;
+        }
+        .legend {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .legend div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .legend div span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Distribución de Ingresos de UnderTango</h1>
+        <div id="chart-container">
+            <canvas id="incomeChart"></canvas>
+        </div>
+        <div class="legend">
+            <div><span style="background-color: #FF6384;"></span>40% Caché de artistas</div>
+            <div><span style="background-color: #36A2EB;"></span>20% Gastos operativos</div>
+            <div><span style="background-color: #FFCE56;"></span>20% Gastos de producción</div>
+            <div><span style="background-color: #4BC0C0;"></span>15% Caja UnderTango</div>
+            <div><span style="background-color: #9966FF;"></span>10% Retribución a inversores de la FDI</div>
+        </div>
+    </div>
+    <script>
+        const ctx = document.getElementById('incomeChart').getContext('2d');
+        const incomeChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Caché de artistas', 'Gastos operativos', 'Gastos de producción', 'Caja UnderTango', 'Retribución a inversores de la FDI'],
+                datasets: [{
+                    data: [40, 20, 20, 15, 10],
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF']
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+</body>
 </html>
