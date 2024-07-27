@@ -27,10 +27,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 500px;
+            height: 700px; /* Aumentar la altura del contenedor */
         }
         canvas {
+            width: 100% !important;
             max-width: 100%;
+            height: auto !important;
             max-height: 100%;
         }
         .legend {
@@ -50,6 +52,7 @@
         }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 </head>
 <body>
     <div class="container">
@@ -70,7 +73,7 @@
         const incomeChart = new Chart(ctx, {
             type: 'pie',
             data: {
-                labels: ['Caché de artistas', 'Gastos operativos', 'Gastos de producción', 'Caja UnderTango', 'Retribución a inversores de la FDI'],
+                labels: ['40% Caché de artistas', '20% Gastos operativos', '20% Gastos de producción', '15% Caja UnderTango', '10% Retribución a inversores de la FDI'],
                 datasets: [{
                     data: [40, 20, 20, 15, 10],
                     backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF']
@@ -79,12 +82,32 @@
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
+                layout: {
+                    padding: {
+                        top: 50,
+                        bottom: 50
+                    }
+                },
                 plugins: {
                     legend: {
                         display: false
+                    },
+                    datalabels: {
+                        color: '#000',
+                        formatter: (value, ctx) => {
+                            return ctx.chart.data.labels[ctx.dataIndex];
+                        },
+                        font: {
+                            weight: 'bold',
+                            size: 14
+                        },
+                        align: 'end',
+                        anchor: 'end',
+                        offset: 20, // Aumentar el offset para dar más espacio
                     }
                 }
-            }
+            },
+            plugins: [ChartDataLabels]
         });
     </script>
 </body>
